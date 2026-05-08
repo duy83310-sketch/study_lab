@@ -11,7 +11,6 @@ def submit_data():
         result_label.config(text=f"Success: \nName:  {name} \nEmail : {email} \nRegistered for {course}")
     if "@" not in email:
         messagebox.showerror("Lỗi định dạng", "Email không hợp lệ! (Phải có ký tự @)")
-        entry_email.delete(0, 'end') 
         return
     else:
         messagebox.showwarning("Input Error", "Please fill in all fields")
